@@ -6,7 +6,7 @@ const contacts = require("../routes/contacts/contacts");
 routes.use("/contacts", contacts);
 
 routes.get("/", (req, res) => {
-	res.send("Health check");
+	res.send("Hello world");
 });
 
 module.exports = routes;
