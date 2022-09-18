@@ -1,6 +1,12 @@
+//const routes = require('express').Router();
 const express = require("express");
-const router = express.Router();
+const routes = require("express").Router();
+const contacts = require("./contacts/contacts");
 
-router.use("/contacts", require("./contacts"));
+routes.use("/contacts", contacts);
 
-module.exports = router;
+routes.get("/", (req, res) => {
+	res.send("Health check");
+});
+
+module.exports = routes;
