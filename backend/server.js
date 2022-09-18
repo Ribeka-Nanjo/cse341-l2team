@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 const uri =
-	"mongodb+srv://ribekananjo:<password>@cluster0.qfou8eh.mongodb.net/?retryWrites=true&w=majority";
+	"mongodb+srv://ribekananjo:Poteribeto06!@cluster0.qfou8eh.mongodb.net/?retryWrites=true&w=majority";
 app.use("/", require("./routes"));
 
 async function connect() {
