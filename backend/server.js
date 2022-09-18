@@ -3,10 +3,6 @@ const mongoose = require("mongoose");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// app.get('/', (req, res) => {
-//     res.send('Hello World!')
-
-// })
 const uri =
 	"mongodb+srv://ribekananjo:Poteribeto06!@cluster0.qfou8eh.mongodb.net/?retryWrites=true&w=majority";
 app.use("/", require("./routes"));
