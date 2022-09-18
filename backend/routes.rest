@@ -1,3 +1,4 @@
 //Local Host
 ###Get all contacts
-Get http://localhost:8080/https://ribekacse341-l2.onrender.com/contacts
+Get https://ribekacse341-l2.onrender.com//contacts
+
