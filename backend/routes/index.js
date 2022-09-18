@@ -1,7 +1,7 @@
 //const routes = require('express').Router();
 const express = require("express");
 const routes = require("express").Router();
-const contacts = require("./contacts/contacts");
+const contacts = require("../routes/contacts/contacts");
 
 routes.use("/contacts", contacts);
 
