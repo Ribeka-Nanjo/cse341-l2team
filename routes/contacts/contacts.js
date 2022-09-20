@@ -1,10 +1,7 @@
-const routes = require("express").Router();
-const {
-	getAllContacts,
-	getContactById,
-} = require("../../controllers/contacts/contacts");
+const express = require("express");
+const professionalController = require("../../controllers/contacts/contacts");
+const router = express.Router();
 
-routes.get("/", getAllContacts);
-routes.get("/:id", getContactById);
-
-module.exports = routes;
+router.get("/", professionalController.getData);
+// localhost:8080/professional/
+module.exports = router;
