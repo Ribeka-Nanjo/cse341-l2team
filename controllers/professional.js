@@ -1,4 +1,4 @@
-const mongodb = require("../../config/database");
+const mongodb = require("../config/database");
 
 const getData = async (req, res, next) => {
 	const result = await mongodb.getDb().db().collection("user").find();
