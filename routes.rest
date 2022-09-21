@@ -1,12 +1,18 @@
 //Local Host
 
-Get https://ribekacse341-team2.onrender.com/
+###Get all contacts
+Get https://ribekacse341-l2.onrender.com/
+//
+######
+ GET http://localhost:8080/ HTTP/1.1
+=======
 
 //
 ###
 GET http://localhost:8080/contacts
 
 ###Get all contacts
+
 //
 ###
 GET http://localhost:8080/professionals/6325d0e71e18e9c339520b33
