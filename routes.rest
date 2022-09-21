@@ -1,33 +1,32 @@
 //Local Host
-GET http://localhost:8080/ HTTP/1.1
 
-//
-###
-GET http://localhost:8080/professional 
-
-###Get all contacts
 Get https://ribekacse341-team2.onrender.com/
 
 //
 ###
-GET http://localhost:8080/professional/6325d0e71e18e9c339520b33
+GET http://localhost:8080/contacts
+
+###Get all contacts
 //
 ###
-GET http://localhost:8080/professional/6325d0e71e18e9c339520b34
+GET http://localhost:8080/professionals/6325d0e71e18e9c339520b33
+//
+###
+GET http://localhost:8080/professionals/6325d0e71e18e9c339520b34
 //
 ###
 
-GET http://localhost:8080/professional/6325d0e71e18e9c339520b35
+GET http://localhost:8080/professionals/6325d0e71e18e9c339520b35
 //
 
 // Render
 ###
-GET https://ribekacse341-team2.onrender.com/professional/6325d0e71e18e9c339520b33
+GET https://ribekacse341-team2.onrender.com/professionals/6325d0e71e18e9c339520b33
 //
 ###
-GET https://ribekacse341-team2.onrender.com/professional/6325d0e71e18e9c339520b34
+GET https://ribekacse341-team2.onrender.com/professionals/6325d0e71e18e9c339520b34
 //
 ###
 
-GET https://ribekacse341-team2.onrender.com/professional/6325d0e71e18e9c339520b35
+GET https://ribekacse341-team2.onrender.com/professionals/6325d0e71e18e9c339520b35
 //
