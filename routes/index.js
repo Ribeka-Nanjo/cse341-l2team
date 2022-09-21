@@ -1,12 +1,13 @@
-//const routes = require('express').Router();
-const express = require("express");
-const routes = require("express").Router();
-const contacts = require("../routes/contacts/contacts");
+// const router = require("express").Router();
+// const professionalRouter = require("./professionals");
 
-routes.use("/contacts", contacts);
+// const getProfessional = async (req, res) => {
+// 	await professionalSchema
+// 		.find()
+// 		.then((data) => res.json(data[0]))
+// 		.catch((err) => res.json({ error: err }));
+// };
 
-routes.get("/", (req, res) => {
-	res.send("Hello world");
-});
-
-module.exports = routes;
+// module.exports = {
+// 	getProfessional,
+// };

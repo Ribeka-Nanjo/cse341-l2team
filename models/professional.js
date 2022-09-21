@@ -23,4 +23,4 @@ const contactSchema = mongoose.Schema(
 	}
 );
 
-module.exports = mongoose.model("Contacts", contactSchema);
+module.exports = mongoose.model("professionals", professionalSchema);

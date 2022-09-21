@@ -9,3 +9,4 @@ app.use("/", require("./routes"));
 app.listen(PORT, () => {
 	console.log(`Connected to DB and listening on ${PORT}`);
 });
+
