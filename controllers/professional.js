@@ -1,15 +1,14 @@
-const professionalSchema = require("../models/professionals");
+const mongodb = require("../config/database");
 
-const getProfessional = async (req, res) => {
-	await professionalSchema
-		.find()
-		.then((data) => res.json(data[0]))
-		.catch((err) => res.json({ error: err }));
+const getData = async (req, res, next) => {
+	const result = await mongodb.getDb().db().collection("user").find();
+	result.toArray().then((lists) => {
+		res.setHeader("Content-Type", "application/json");
+		res.status(200).json(lists[0]); // we just need the first one (the only one)
+	});
 };
 
-module.exports = {
-	getProfessional,
-};
+module.exports = { getData };
 
 // const Contacts = require("../models/professionals");
 
