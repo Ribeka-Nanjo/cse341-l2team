@@ -1,3 +1,16 @@
+const professionalSchema = require("../models/professionals");
+
+const getProfessional = async (req, res) => {
+	await professionalSchema
+		.find()
+		.then((data) => res.json(data[0]))
+		.catch((err) => res.json({ error: err }));
+};
+
+module.exports = {
+	getProfessional,
+};
+
 // const Contacts = require("../models/professionals");
 
 // const getAllContacts = async (req, res) => {
@@ -22,16 +35,3 @@
 // 	}
 // };
 // module.exports = { getAllContacts, getContactById };
-
-const professionalSchema = require("../models/professionals");
-
-const getProfessional = async (req, res) => {
-	await professionalSchema
-		.find()
-		.then((data) => res.json(data[0]))
-		.catch((err) => res.json({ error: err }));
-};
-
-module.exports = {
-	getProfessional,
-};

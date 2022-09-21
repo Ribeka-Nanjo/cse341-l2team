@@ -1,11 +1,13 @@
-const router = require("express").Router();
-const professionalRouter = require("./professionals");
+// const router = require("express").Router();
+// const professionalRouter = require("./professionals");
 
-router.get("/", (req, res) => {
-	console.log("good");
-	res.status(200).send("good");
-});
+// const getProfessional = async (req, res) => {
+// 	await professionalSchema
+// 		.find()
+// 		.then((data) => res.json(data[0]))
+// 		.catch((err) => res.json({ error: err }));
+// };
 
-router.use("/professional", professionalRouter);
-
-module.exports = router;
+// module.exports = {
+// 	getProfessional,
+// };
