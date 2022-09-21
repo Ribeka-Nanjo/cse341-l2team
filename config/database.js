@@ -1,9 +1,5 @@
-//connnect .env
 const dotenv = require("dotenv");
 dotenv.config();
-
-//the content of controller contact.js
-//Store mongo connection
 const MongoClient = require("mongodb").MongoClient;
 
 let _db;
