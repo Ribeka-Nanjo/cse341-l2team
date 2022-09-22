@@ -33,7 +33,7 @@ PUT  http://localhost:8080/contacts/6325d0e71e18e9c339520b34 HTTP/1.1
     	"firstName": "Mary",
 		"lastName": "Allred",
 		"email": "mallred@test.com",
-		"favoriteColor": "Purple",
+		"favoriteColor": "yellow",
 		"birthday": "03/12/92"
 }
 
