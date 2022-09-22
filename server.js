@@ -1,16 +1,22 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
 const db = require("./config/database");
 
-app.use(
-	cors({
-		origin: "*",
-	})
-);
+// const uri =
+// 	"mongodb+srv://ribekananjo06!:@cluster0.qfou8eh.mongodb.net/?retryWrites=true&w=majority";
+// app.use("/", require("./routes"));
+// async function connect() {
+// 	try {
+// 		await mongoose.connect(uri);
+// 		console.log("Connected to MongoDB");
+// 	} catch (error) {
+// 		console.error(error);
+// 	}
+// }
 
-app.use("/", require("./routes"));
 app.listen(PORT, () => {
-	console.log(`Connected to DB and listening on ${PORT}`);
+	console.log(`Server started on port ${PORT}`);
 });
