@@ -1,22 +1,23 @@
-const express = require("express");
-const mongoose = require("mongoose");
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongodb = require('./config/database');
+
+const port = process.env.PORT || 8080;
 const app = express();
-const PORT = process.env.PORT || 8080;
 
-const db = require("./config/database");
+app
+  .use(bodyParser.json())
+  .use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+  })
+  .use('/', require('./routes'));
 
-// const uri =
-// 	"mongodb+srv://ribekananjo06!:@cluster0.qfou8eh.mongodb.net/?retryWrites=true&w=majority";
-// app.use("/", require("./routes"));
-// async function connect() {
-// 	try {
-// 		await mongoose.connect(uri);
-// 		console.log("Connected to MongoDB");
-// 	} catch (error) {
-// 		console.error(error);
-// 	}
-// }
-
-app.listen(PORT, () => {
-	console.log(`Server started on port ${PORT}`);
+mongodb.initDb((err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    app.listen(port);
+    console.log(`Connected to DB and listening on ${port}`);
+  }
 });
