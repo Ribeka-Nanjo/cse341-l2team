@@ -5,7 +5,7 @@ const doc = {
     title: 'My API',
     description: 'Temple API'
   },
-  host: 'https://ribekacse341-team2.onrender.com',
+  host: 'ribekacse341-team2.onrender.com',
   schemes: ['https']
 };
 
