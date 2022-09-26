@@ -5,7 +5,7 @@ const doc = {
     title: 'My API',
     description: 'Temple API'
   },
-  host: 'cse341-instructor.herokuapp.com',
+  host: 'https://ribekacse341-team2.onrender.com',
   schemes: ['https']
 };
 
